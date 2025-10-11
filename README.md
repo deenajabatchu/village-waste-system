@@ -36,25 +36,29 @@ This project is built using **Flask, MySQL, HTML, CSS, and JavaScript**.
 
 village-waste-system/
 │
-├─ app.py # Main Flask application
-├─ config.py # Database and secret key configuration
-├─ schema.sql # SQL schema for database
-├─ .env # Environment variables (not tracked in GitHub)
-├─ requirements.txt # Python dependencies
-├─ templates/ # HTML templates
-│ ├─ base.html
-│ ├─ index.html
-│ ├─ register.html
-│ ├─ login.html
-│ ├─ raise_complaint.html
-│ ├─ view_status.html
-│ └─ admin_dashboard.html
-├─ static/ # CSS and JS files
-│ ├─ css/
-│ │ └─ style.css
-│ └─ js/
-│ └─ main.js
+├─ app.py                  # Main Flask application
+├─ config.py               # Database and secret key configuration
+├─ schema.sql              # SQL schema for database
+├─ .env                    # Environment variables (not tracked in GitHub)
+├─ requirements.txt        # Python dependencies
+│
+├─ templates/              # HTML templates
+│  ├─ base.html
+│  ├─ index.html
+│  ├─ register.html
+│  ├─ login.html
+│  ├─ raise_complaint.html
+│  ├─ view_status.html
+│  └─ admin_dashboard.html
+│
+├─ static/                 # CSS and JS files
+│  ├─ css/
+│  │  └─ style.css
+│  └─ js/
+│     └─ main.js
+│
 └─ README.md
+
 
 
 **Clone the repository:**
