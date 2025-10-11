@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card-container">
+  <h3 class="text-center mb-3">Create Account</h3>
+  <form method="post">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" placeholder="username" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="email-@gmail.com" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Strong Password" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <input type="text" class="form-control" name="address" placeholder="With valid Door no" >
+    </div>
+    <button class="btn btn-primary w-100">Register</button>
+    <p class="text-center mt-3">Already have an account? <a href="/login">Login</a></p>
+  </form>
+</div>
+{% endblock %}

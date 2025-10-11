@@ -1,0 +1,101 @@
+/* ---------- Global Styles ---------- */
+body {
+  background-color: #f6f8fa;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #4C6444;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Container Cards ---------- */
+.card-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #a5dba2;
+  padding: 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background-color: #5b4636;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4b3a2c;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4 {
+  color: #4b3a2c;
+  font-weight: 600;
+}
+
+/* ---------- Forms ---------- */
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #134e26;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* Ensures the footer appears above other content */
+}
+
+/* ---------- Alerts ---------- */
+.alert {
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* ---------- Index Page Banner ---------- */
+.jumbotron {
+  background: linear-gradient(135deg, #4e824a 0%, #356d39 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.jumbotron .btn {
+  margin-top: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+
+.status-pending {
+  background-color: #ffecec; /* light red */
+}
+.status-collected {
+  background-color: #eaffea; /* light green */
+}
+
+.alert.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+
+

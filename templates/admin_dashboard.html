@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Admin </h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th><th>Date</th><th>Villager</th><th>Address</th>
+      <th>Type</th><th>Description</th><th>Status</th><th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in complaints %}
+    <tr>
+      <td>{{ c.id }}</td>
+      <td>{{ c.complaint_date }}</td>
+      <td>{{ c.name }}</td>
+      <td>{{ c.address }}</td>
+      <td>{{ c.waste_type }}</td>
+      <td>{{ c.description }}</td>
+      <td id="status-{{ c.id }}">{{ c.status }}</td>
+      <td>
+        {% if c.status == 'Pending' %}
+          <button class="btn btn-sm btn-success" onclick="updateStatus({{ c.id }}, 'Collected')">Mark Collected</button>
+        {% else %}
+          <button class="btn btn-sm btn-secondary" disabled>Collected</button>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
