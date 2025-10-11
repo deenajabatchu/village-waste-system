@@ -56,7 +56,7 @@ village-waste-system/
 │
 └─ README.md
 
----
+
 
 **Clone the repository:**
 
