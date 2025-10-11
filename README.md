@@ -55,11 +55,3 @@ village-waste-system/
 │     └─ main.js
 │
 └─ README.md
-
-
-
-**Clone the repository:**
-
-```bash
-git clone https://github.com/deenajabatchu/village-waste-system.git
-cd village-waste-system
